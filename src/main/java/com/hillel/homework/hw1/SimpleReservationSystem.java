@@ -6,13 +6,14 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class SimpleReservationSystem {
+    static final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     public static void main(String[] args) throws IOException {
 
         ArrayList<Table> tables = new ArrayList<>();
         for (int i = 1; i <= 10; i++) {
             tables.add(new Table(i));
         }
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
         boolean running = true;
 
         while (running) {
